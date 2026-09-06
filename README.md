@@ -146,6 +146,8 @@ Change these and every module below re-sizes automatically.
    against a software Lloyd's-algorithm model** run inside the testbench
    with the exact same integer arithmetic — so a pass here is a real
    correctness check, not just "it didn't crash."
+
+![Simulation Waveform](waveform.png)
 3. In the waveform viewer, useful signals to add: `dut/state`,
    `dut/round_idx`, `dut/iter_count`, `dut/centroids`, `dut/g_count`,
    and any `dut/gen_pe[0].u_pe/*` signal to watch one lane in detail.
