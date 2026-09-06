@@ -7,14 +7,15 @@ This project implements a small, parallel **FPGA accelerator** for the
 (lanes) each working on different data points at the same time
 (SIMD execution).  
 
-**Key Features**
-**Parallel Processing:** Multi-lane architecture for simultaneous
+## Key Features
+
+* **Parallel Processing:** Multi-lane architecture for simultaneous
 distance computation and centroid update.
 
-**Verified Design:** Self-checking testbench verified against a
+* **Verified Design:** Self-checking testbench verified against a
 software reference model.
 
-**Target Toolchain:** Designed, simulated and verified with AMD Vivado.
+* **Target Toolchain:** Designed, simulated and verified with AMD Vivado.
 
 ---
 
