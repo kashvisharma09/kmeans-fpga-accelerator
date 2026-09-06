@@ -4,19 +4,17 @@
 This project implements a small, parallel **FPGA accelerator** for the
 **K-means clustering algorithm** (the "AI/ML" workload). It uses a
 **GPU-inspired architecture** — several identical "processing elements"
-(lanes) work on different data points at the same time, the same
-SIMT/SIMD idea a real GPU uses (many lanes, same program, different
-data) — but it is important to be precise about what this is *not*:
-this is **fixed-function hardware for one algorithm**, not a
-programmable, general-purpose GPU. There's no instruction fetch, no
-thread scheduler, no general compute capability — just one parallel
-execution pattern borrowed deliberately from GPU design and applied to
-a specific clustering workload.
+(lanes) each working on different data points at the same time
+(SIMD execution).  
 
-It has been **compiled and simulated successfully with Icarus Verilog**
-during development (self-checking testbench, bit-exact match against a
-software reference model). Below are the exact steps to bring it into
-**Vivado**.
+**Key Features**
+**Parallel Processing:** Multi-lane architecture for simultaneous
+distance computation and centroid update.
+
+**Verified Design:** Self-checking testbench verified against a
+software reference model.
+
+**Target Toolchain:** Designed, simulated and verified with AMD Vivado.
 
 ---
 
