@@ -148,6 +148,7 @@ Change these and every module below re-sizes automatically.
    correctness check, not just "it didn't crash."
 
 ![Simulation Waveform](waveform.png)
+*Figure 1: Behavioral simulation waveform showing clock, control signals, and parallel lane execution.*
 
 3. In the waveform viewer, useful signals to add: `dut/state`,
    `dut/round_idx`, `dut/iter_count`, `dut/centroids`, `dut/g_count`,
