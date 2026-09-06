@@ -188,7 +188,7 @@ iter_count                                // iterations actually used
 Load every point and initial centroid while the FSM is in `S_IDLE`, then
 pulse `start` for one cycle.
 
-## 7. Running on real hardware later, via ILA (no board required yet)
+## 5. Running on real hardware later, via ILA (no board required yet)
 
 `rtl/kmeans_board_top.sv` is a standalone wrapper you can add to the
 project right now, ahead of picking a board:
@@ -235,7 +235,7 @@ This means you can develop and fully validate the debug/observability
 flow today, and the only thing you'll need to add later is a board-
 specific XDC file with the right pin names.
 
-## 5. Design notes / simplifications (worth knowing for a report or viva)
+## 6. Design notes / simplifications (worth knowing for a report or viva)
 
 * **Squared distance, no sqrt**: comparing squared distances gives the
   same nearest-neighbor result as comparing true distances, and avoids
