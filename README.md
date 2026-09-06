@@ -151,6 +151,7 @@ Change these and every module below re-sizes automatically.
 3. In the waveform viewer, useful signals to add: `dut/state`,
    `dut/round_idx`, `dut/iter_count`, `dut/centroids`, `dut/g_count`,
    and any `dut/gen_pe[0].u_pe/*` signal to watch one lane in detail.
+
 4. If the simulation runs long, click the "Run All" ▶ button again or check
    the Tcl console for the `$finish` message.
 
