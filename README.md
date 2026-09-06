@@ -154,6 +154,7 @@ Change these and every module below re-sizes automatically.
   <em>Figure 1: Behavioral simulation waveform showing memory loading, parallel lane activity, and convergence.</em>
 </p>
 
+
 3. In the waveform viewer, useful signals to add: `dut/state`,
    `dut/round_idx`, `dut/iter_count`, `dut/centroids`, `dut/g_count`,
    and any `dut/gen_pe[0].u_pe/*` signal to watch one lane in detail.
